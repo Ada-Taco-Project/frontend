@@ -1,0 +1,16 @@
+.SignUpPage {
+  width: 100%;
+  height: 45.5rem;
+  background-color: #FFFAE8;
+}
+
+.signUp-box {
+  background-color: #fff;
+  width: 40rem;
+  margin-top: 6rem;
+  margin-left: 18rem;
+  text-align: center;
+  padding: 2rem 8rem 7rem 8rem;
+  border: 1px solid #D8D8D8;
+  position: fixed;
+}
