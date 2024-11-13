@@ -32,7 +32,7 @@ ul {
 
 .navbar_menu {
   position: fixed;
-  margin-left: 20rem;
+  margin-left: 22.5rem;
 }
 
 .navbar_menu li{
@@ -40,9 +40,13 @@ ul {
   color: black;
 }
 
-.navbar_menu b:hover{
+.navbar_menu b:hover {
   color: #263A99;
   cursor: pointer;
+}
+
+.navbar_menu b.active {
+  color: #263A99;
 }
 
 
