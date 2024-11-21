@@ -1,5 +1,6 @@
-body{
-  margin:0;
+body {
+  margin: 0;
+  padding: 60px 0 0 0;
 }
 
 /* header style */
@@ -15,14 +16,19 @@ ul {
 }
 
 .navbar {
+  position: fixed;
+  top: 0; 
+  left: 0;
+  width: 100%;
   padding: 0 115px 0 180px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: #ffffff;
-  color: gray;
   box-shadow: 0 0 4px;
+  color: gray;
   height: 60px;
+  z-index: 1000;
 }
 
 .navbar_logo {
@@ -86,22 +92,24 @@ ul {
 
 .header_person {
   height: 40px;
-  margin-left: 5px;
+  margin-left: 0.8rem;
+  margin-right: 25rem;
   cursor: pointer;
 }
 
 @media screen and (max-width: 1035px) {
-  .navbar_users li{
-      display: none;
+  .navbar_users li {
+    display: none;
   }
 }
 
 @media screen and (max-width: 850px) {
-  .navbar_menu{
-      display: none;
+  .navbar_menu {
+    display: none;
   }
 
-  .navbar{
-      justify-content:flex-start;
+  .navbar {
+    /* justify-content:flex-start; */
+    padding: 0 15px; 
   }
 }

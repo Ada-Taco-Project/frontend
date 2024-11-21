@@ -15,15 +15,19 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  border-right: solid 1px #B5B5B5;
 }
 
 .contact-name div {
-  margin-bottom: 1.8rem;
   color: #434343;
   font-size: 0.9rem;
   margin-right: 1rem;
-  padding-right: 0.3rem;
+  padding: 0;
+  margin-bottom: 1.9rem;
+  width: 9rem;
+}
+
+.contact-file {
+  margin-top: 6.2rem;
 }
 
 .contact-input {
@@ -31,6 +35,8 @@
   flex-direction: column;
   width: 100%;
   margin-left: 1rem;
+  border-left: solid 1px #B5B5B5;
+  padding-left: 1rem;
 }
 
 .contact-input input[type="text"] {
@@ -42,7 +48,6 @@
 }
 
 .contact-input input[type="text"]:focus, .contact-input input[type="textarea"]:focus {
-  outline: none;
   border-color: #000;
 }
 
@@ -59,6 +64,7 @@
 .file-select {
   display: flex;
   align-items: center;
+  width: 100%;
 }
 
 .file-select input[type="text"] {
