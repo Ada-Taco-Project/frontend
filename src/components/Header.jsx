@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
-import './style/Header.css';
+import './Header.css';
 
 const Header = () => {
     const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -22,6 +22,10 @@ const Header = () => {
     const handleSelectPage = () => {
         navigate('/SelectLanguage');
     };
+
+    const handleRankingPage = () => {
+        navigate('/ranking')
+    }
 
     const handleLoginPage = () => {
         navigate('/login');
@@ -47,7 +51,7 @@ const Header = () => {
                 </li>
                 <li>
                     <b
-                        onClick={() => navigate('/ranking')}
+                        onClick={handleRankingPage}
                         className={location.pathname === '/ranking' ? 'active' : ''}>
                         타자 랭킹
                     </b>

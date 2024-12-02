@@ -1,15 +1,30 @@
-import { useState, useRef } from "react";
+import { useState, useRef, useEffect } from "react";
+import { useNavigate } from "react-router-dom"; 
 import Header from "../components/Header";
 import './Contact.css';
 
 const Contact = () => {
   const [fileName, setFileName] = useState("선택된 파일");
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
 
-  // Refs for input fields
   const nameRef = useRef(null);
   const emailRef = useRef(null);
   const titleRef = useRef(null);
   const contentRef = useRef(null);
+
+  const navigate = useNavigate(); 
+
+  // 로그인 여부를 확인하는 로직
+  useEffect(() => {
+    // 로그인 상태를 확인 (임시로 localStorage를 사용)
+    const loggedIn = localStorage.getItem("loggedIn") === "true"; // 임시: 실제로는 API 호출
+    setIsLoggedIn(loggedIn);
+  
+    if (!loggedIn) {
+      alert("로그인 후 이용할 수 있는 페이지입니다.");
+      navigate("/login"); 
+    }
+  }, [navigate]);
 
   const onClickUpload = () => {
     let myInput = document.getElementById("input-hidden");
@@ -40,7 +55,7 @@ const Contact = () => {
           firstInvalidField = input;
         }
       } else {
-        input.style.border = ""; // Reset border if valid
+        input.style.border = ""; 
       }
     });
 
@@ -51,6 +66,7 @@ const Contact = () => {
     }
 
     alert('문의작성이 완료되었습니다.');
+    navigate("/"); 
   };
 
   return (

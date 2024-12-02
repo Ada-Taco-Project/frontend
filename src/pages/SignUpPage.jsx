@@ -24,6 +24,7 @@ const SignUpPage = () => {
   }, [isCountdown, timer]);
 
   const handleNicknameCheck = () => {
+    if (isNicknameValid === true) return
     if (nickname === '') {
       alert("닉네임을 입력하지 않았습니다.");
       setIsNicknameValid(false);
@@ -38,6 +39,7 @@ const SignUpPage = () => {
   };
 
   const handleIdCheck = () => {
+    if (isIdValid === true) return
     if (id === '') {
       alert("아이디를 입력하지 않았습니다.");
       setIsIdValid(false);
@@ -83,7 +85,7 @@ const SignUpPage = () => {
                 borderColor: isNicknameValid === true ? '#00FF57' : isNicknameValid === false ? '#FF370C' : '#D8D8D8',
               }}
             />
-            <button type="button" onClick={handleNicknameCheck} style={{ backgroundColor: isNicknameValid !== null ? '#D9D9D9' : '' }}>중복 확인</button>
+            <button type="button" onClick={handleNicknameCheck} style={{ backgroundColor: isNicknameValid !== null ? '#D9D9D9' : '' }}>{isNicknameValid === true ? "사용 가능" : "중복 확인"}</button>
           </div>
           <div className="input-group">
             <input
@@ -95,7 +97,7 @@ const SignUpPage = () => {
                 borderColor: isIdValid === true ? '#00FF57' : isIdValid === false ? '#FF370C' : '#D8D8D8',
               }}
             />
-            <button type="button" onClick={handleIdCheck} style={{ backgroundColor: isIdValid !== null ? '#D9D9D9' : '' }}>중복 확인</button>
+            <button type="button" onClick={handleIdCheck} style={{ backgroundColor: isIdValid !== null ? '#D9D9D9' : '' }}>{isIdValid === true ? "사용 가능" : "중복 확인"}</button>
           </div>
           <div className="input-group">
             <input

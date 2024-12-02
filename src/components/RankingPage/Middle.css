@@ -1,0 +1,69 @@
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px; 
+  margin-top: 20px;
+}
+
+.ranking {
+  display: flex;
+  align-items: center; 
+  justify-content: space-between; 
+  padding: 0px 24px 0px 24px;
+  width: 90%;
+  height: 90px;
+  /* border: 2px solid #7B7B7B; */
+  border: 2px solid #adadad;
+  border-radius: 10px;
+  background-color: #FFFFFF; 
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
+
+.number-userinfo-container {
+  display: flex;
+  align-items: center; 
+  gap: 10px; 
+}
+
+.number {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #B0B0B0;
+}
+
+.uesrinfo {
+  display: flex;
+  align-items: center; 
+  gap: 10px;
+  margin-left: 1rem;
+}
+
+.uesrinfo img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.uesrname {
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+.typingspeed {
+  display: flex;
+  align-items: center; 
+  gap: 5px; 
+}
+
+.typingspeed .highest {
+  font-weight: bold;
+  color: #0074BD; 
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.typingspeed{
+  font-size: 3rem;
+  color: #C9C9C9;
+}

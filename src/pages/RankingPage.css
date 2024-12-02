@@ -1,0 +1,42 @@
+
+
+.explanation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 70px;
+}
+
+.explanation button {
+  background: none;
+  border: none; 
+  font-size: 45px; 
+  color: #97B4DE; 
+  padding: 0 10px; 
+  cursor: pointer; 
+}
+
+.explanation button:active {
+  color: #637EA6;
+}
+
+.explanation button:hover {
+  color: #637EA6;
+}
+
+.text {
+  text-align: center;
+}
+
+.text h1 {
+  font-size: 32px;
+  margin-bottom: 5px;
+  margin-top: 2rem;
+}
+
+.text h5 {
+  color: #89ACE0;
+  font-size: 14px;
+  margin-top: 0px;
+  font-weight: 500;
+}
