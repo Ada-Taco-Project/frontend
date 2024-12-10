@@ -6,7 +6,7 @@ import Middle from '../components/RankingPage/Middle'
 import Advanced from '../components/RankingPage/Advanced'
 
 const RankingPage = () => {
-  const [level, setLevel] = useState(0); // 0: 초급, 1: 중급, 2: 고급
+  const [level, setLevel] = useState(0); // 0: 초급 | 1: 중급 | 2: 고급
 
   const levels = [
     { name: '초급용', color: '#89ACE0', component: <Beginner /> },
