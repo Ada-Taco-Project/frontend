@@ -1,10 +1,9 @@
-
-
 .explanation {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 70px;
+  margin-top: 0px;
 }
 
 .explanation button {

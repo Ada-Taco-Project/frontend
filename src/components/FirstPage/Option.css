@@ -1,0 +1,89 @@
+.option {
+  width: 20vw;
+  height: 22vw;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  line-height: 1.5;
+  box-shadow: 1px 1px 4px 1px rgba(128, 128, 128, 0.5);
+  border-radius: 12%;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+}
+
+.color {
+  width: 20vw;
+  height: 18vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  border-radius: 12% 12% 0 0;
+}
+
+.color b {
+  font-weight: bold;
+  font-size: 1.2vw;
+  line-height: 4vw;
+}
+
+.color .img {
+  width: 20vw; 
+  height: 14vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.color .text {
+  width: 20vw;
+  height: 4vw;
+}
+
+.white {
+  width: 20vw;
+  height: 4vw;
+  background-color: white;
+}
+
+.white:hover {
+  background-color: #EBEBEB;
+}
+
+.option img {
+  width: 72%; 
+  height: auto;
+}
+
+.option:hover {
+  transform: translateY(-5px);
+}
+
+.beginner .color {
+  background-color: #89ace0;
+}
+
+.intermediate .color {
+  background-color: #263a99;
+}
+
+.advanced .color {
+  background-color: #03036b;
+}
+
+.extra .color {
+  background-color: #ffc329;
+}
+
+.seats .color {
+  background-color: #89ace0;
+}
+
+.keyword .color {
+  background-color: #263A99;
+}

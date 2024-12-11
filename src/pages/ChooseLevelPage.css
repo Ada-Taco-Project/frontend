@@ -1,0 +1,16 @@
+.chooseLevelPage_title  {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.chooseLevelPage_title h1 {
+  margin-bottom: 0px;
+}
+
+.chooseLevelPage_title p{
+  color: #89ACE0;
+  margin-bottom: 48px;
+  font-size: 0.85rem;
+  margin-top: 4px;
+}
+

@@ -1,0 +1,31 @@
+.firstPage_title  {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.firstPage_title h1 {
+  margin-bottom: 0px;
+}
+
+.firstPage_title p{
+  color: #757575;
+  margin-bottom: 48px;
+  font-size: 0.85rem;
+  margin-top: 4px;
+}
+
+.options {
+  display: flex;
+  justify-content: center;
+  gap: 3vw;
+  flex-wrap: wrap;
+  padding: 0 20px;
+}
+.options button {
+  background: none; 
+  border: none;
+  box-shadow: none; 
+  padding: 0; 
+  margin: 0; 
+  outline: none;
+}

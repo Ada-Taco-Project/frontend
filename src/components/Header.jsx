@@ -91,7 +91,7 @@ const Header = ({ isLoggedIn, setIsLoggedIn }) => {
             <img
               onClick={handleLoginPage}
               className="header_person"
-              src="../images/person.png"
+              src="/images/person.png"
               alt="프로필 설정"
             />
           </>

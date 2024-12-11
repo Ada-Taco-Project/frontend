@@ -5,6 +5,8 @@ import MainPage from './pages/MainPage';
 import LoginPage from './pages/LoginPage';
 import SignUpPage from './pages/SignUpPage';
 import SelectLanguage from './pages/SelectLanguage';
+import FirstPage from './pages/FirstPage';
+import ChooseLevelPage from './pages/ChooseLevelPage';
 import Contact from './pages/Contact';
 import RankingPage from './pages/RankingPage';
 import ProfilePage from './pages/ProfilePage';
@@ -26,6 +28,8 @@ function App() {
         <Route path="/login" element={<LoginPage setIsLoggedIn={setIsLoggedIn} />} />
         <Route path="/signup" element={<SignUpPage />} />
         <Route path="/selectlanguage" element={<SelectLanguage />} />
+        <Route path="/selectlanguage/:language" element={<FirstPage />} />
+        <Route path="/selectlanguage/:language/chooseLevelPage" element={<ChooseLevelPage />}/>
         <Route path="/ranking" element={<RankingPage />} />
 
         {/* 인증이 필요한 페이지 */}
